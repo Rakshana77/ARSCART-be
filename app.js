@@ -22,7 +22,7 @@ app.use('/api/v1/',orders);
 //         res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'))
 //     });
 // }
-app.get('/',()=>{
+app.get('/',(req,res)=>{
     res.send('welcome to api');
 })
 app.listen(process.env.PORT, () => {
